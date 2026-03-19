@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
+    <ProjectReference Include="..\Starfall.EventGateway.Application\Starfall.EventGateway.Application.csproj" />
+    <ProjectReference Include="..\Starfall.EventGateway.Contracts\Starfall.EventGateway.Contracts.csproj" />
+    <ProjectReference Include="..\Starfall.EventGateway.Data\Starfall.EventGateway.Data.csproj" />
+  </ItemGroup>
+
+</Project>

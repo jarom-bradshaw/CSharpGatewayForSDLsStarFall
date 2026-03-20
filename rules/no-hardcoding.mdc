@@ -1,0 +1,12 @@
+---
+description: Prevent hardcoded configuration and demo data
+alwaysApply: true
+---
+
+# No hardcoding (required)
+
+- Do not hardcode **connection strings**, DB hosts/ports, usernames/passwords, API keys, file paths, or environment-specific URLs in code.
+- Do not hardcode **domain/demo responses**. All domain data must come from real integrations (e.g., StarFall Postgres).
+- Read configuration via `IConfiguration` (e.g., `ConnectionStrings:StarfallDatabase`) and allow overrides via environment variables.
+- If something is required at runtime, fail fast with a clear error or return `503` for health checks (don’t silently fall back to fake defaults).
+

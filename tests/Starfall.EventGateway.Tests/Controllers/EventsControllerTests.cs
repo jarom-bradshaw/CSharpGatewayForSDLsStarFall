@@ -55,7 +55,7 @@ public sealed class EventsControllerTests
     private sealed class FakeEventService : IEventService
     {
         public Task<PagedResult<EventSummaryDto>> GetEventsAsync(int pageNumber, int pageSize, CancellationToken cancellationToken) =>
-            Task.FromResult(new PagedResult<EventSummaryDto>(Array.Empty<EventSummaryDto>(), totalCount: 0, pageNumber, pageSize));
+            Task.FromResult(new PagedResult<EventSummaryDto>(Array.Empty<EventSummaryDto>(), TotalCount: 0, PageNumber: pageNumber, PageSize: pageSize));
 
         public Task<EventDetailsDto?> GetEventDetailsAsync(Guid eventId, CancellationToken cancellationToken) =>
             Task.FromResult<EventDetailsDto?>(null);

@@ -7,6 +7,14 @@ ASP.NET Core Web API that exposes a clean REST surface over a StarFall-style Pos
 - .NET SDK (latest)
 - A Postgres database running locally (StarFall schema recommended)
 
+### StarFall Docker + DB setup
+
+For Docker container and database initialization, follow the official StarFall setup instructions in:
+
+- [Space-Dynamics-Laboratory/StarFall](https://github.com/Space-Dynamics-Laboratory/StarFall)
+
+This gateway is standalone, but it expects a compatible StarFall Postgres schema/data source.
+
 ### Configure
 
 Set the connection string via environment variable (recommended).
